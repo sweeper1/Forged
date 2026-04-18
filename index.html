@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FORGED — Privacy Policy</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Inter:wght@300;400;500;600&display=swap');
+
+  :root {
+    --bg: #080B0F;
+    --surface: #0D1117;
+    --border: #1E2D3D;
+    --cyan: #00D4FF;
+    --mint: #00FFCC;
+    --amber: #FFAA00;
+    --muted: #7A9AB5;
+    --dim: #3D5A73;
+    --text: #E8EDF2;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    line-height: 1.7;
+    font-size: 16px;
+  }
+
+  /* Grid background */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image:
+      linear-gradient(var(--border) 1px, transparent 1px),
+      linear-gradient(90deg, var(--border) 1px, transparent 1px);
+    background-size: 40px 40px;
+    opacity: 0.3;
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .container {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 80px 32px 120px;
+    position: relative;
+    z-index: 1;
+  }
+
+  header {
+    margin-bottom: 64px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .wordmark {
+    font-family: 'Space Mono', monospace;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    background: linear-gradient(90deg, var(--cyan), var(--mint));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 24px;
+  }
+
+  h1 {
+    font-family: 'Space Mono', monospace;
+    font-size: clamp(28px, 5vw, 42px);
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    color: var(--text);
+    line-height: 1.1;
+    margin-bottom: 16px;
+  }
+
+  .meta {
+    font-size: 13px;
+    color: var(--dim);
+    letter-spacing: 1px;
+    font-family: 'Space Mono', monospace;
+  }
+
+  .intro {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--cyan);
+    border-radius: 8px;
+    padding: 24px 28px;
+    margin-bottom: 48px;
+    color: var(--muted);
+    font-size: 15px;
+    line-height: 1.8;
+  }
+
+  section {
+    margin-bottom: 48px;
+  }
+
+  h2 {
+    font-family: 'Space Mono', monospace;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: var(--cyan);
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  p {
+    color: var(--muted);
+    font-size: 15px;
+    margin-bottom: 16px;
+    line-height: 1.8;
+  }
+
+  p:last-child { margin-bottom: 0; }
+
+  ul {
+    list-style: none;
+    margin: 16px 0;
+  }
+
+  ul li {
+    color: var(--muted);
+    font-size: 15px;
+    padding: 8px 0 8px 20px;
+    position: relative;
+    border-bottom: 1px solid rgba(30, 45, 61, 0.5);
+    line-height: 1.6;
+  }
+
+  ul li:last-child { border-bottom: none; }
+
+  ul li::before {
+    content: '—';
+    position: absolute;
+    left: 0;
+    color: var(--dim);
+    font-family: 'Space Mono', monospace;
+  }
+
+  strong {
+    color: var(--text);
+    font-weight: 600;
+  }
+
+  .highlight {
+    background: rgba(0, 212, 255, 0.06);
+    border: 1px solid rgba(0, 212, 255, 0.15);
+    border-radius: 6px;
+    padding: 20px 24px;
+    margin: 20px 0;
+  }
+
+  .highlight p {
+    margin: 0;
+    color: var(--text);
+    font-size: 14px;
+  }
+
+  a {
+    color: var(--cyan);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(0, 212, 255, 0.3);
+    transition: border-color 0.2s;
+  }
+
+  a:hover { border-color: var(--cyan); }
+
+  footer {
+    margin-top: 80px;
+    padding-top: 32px;
+    border-top: 1px solid var(--border);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: gap;
+    gap: 16px;
+  }
+
+  .footer-brand {
+    font-family: 'Space Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 3px;
+    background: linear-gradient(90deg, var(--cyan), var(--mint));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .footer-date {
+    font-size: 12px;
+    color: var(--dim);
+    font-family: 'Space Mono', monospace;
+  }
+
+  @media (max-width: 600px) {
+    .container { padding: 48px 20px 80px; }
+    footer { flex-direction: column; align-items: flex-start; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <div class="wordmark">FORGED</div>
+    <h1>Privacy Policy</h1>
+    <div class="meta">EFFECTIVE DATE — REPLACE WITH LAUNCH DATE</div>
+  </header>
+
+  <div class="intro">
+    Your privacy matters. FORGED is designed to work entirely on your device. We don't run servers, we don't collect your data, and we don't sell anything about you to anyone. This policy explains what data the app accesses and why.
+  </div>
+
+  <section>
+    <h2>What We Collect</h2>
+    <p>FORGED does not collect, transmit, or store any personal data on external servers. All data you create in the app — your workout history, program progress, name, XP, achievements, and preferences — lives exclusively on your device and in your iCloud account if you have iCloud backup enabled.</p>
+    <p>We do not have access to this data. We cannot see it, retrieve it, or use it in any way.</p>
+  </section>
+
+  <section>
+    <h2>Apple HealthKit</h2>
+    <p>FORGED can optionally connect to Apple Health to enhance your experience. If you grant permission, the app reads the following data types:</p>
+    <ul>
+      <li><strong>Active Energy Burned</strong> — to display your calorie data on the Health tab</li>
+      <li><strong>Exercise Time</strong> — to cross-reference workout activity and avoid inaccurate missed-session notifications on days you were active</li>
+      <li><strong>Resting Heart Rate</strong> — to display on the Health tab</li>
+      <li><strong>VO2 Max</strong> — to display on the Health tab</li>
+      <li><strong>Workouts</strong> — to show recent workout history on the Health tab</li>
+    </ul>
+    <div class="highlight">
+      <p>HealthKit data is read locally on your device only. It is never transmitted anywhere, never stored outside of Apple's Health framework, and never shared with any third party — including us.</p>
+    </div>
+    <p>You can revoke HealthKit access at any time in Settings → Privacy & Security → Health → FORGED.</p>
+  </section>
+
+  <section>
+    <h2>Notifications</h2>
+    <p>If you grant notification permission, FORGED schedules local notifications on your device to remind you to train. These notifications are generated entirely on-device and do not involve any external servers or data transmission. No information about your notification activity is collected or shared.</p>
+  </section>
+
+  <section>
+    <h2>Apple Watch</h2>
+    <p>If you use the FORGED Apple Watch app, workout session data is synced directly between your iPhone and Apple Watch using Apple's WatchConnectivity framework. This sync happens locally over your personal device pair and does not pass through any external servers.</p>
+  </section>
+
+  <section>
+    <h2>In-App Purchases</h2>
+    <p>FORGED offers optional program unlocks via in-app purchase. All payment processing is handled entirely by Apple through the App Store. We do not collect, process, or store any payment information. Apple's privacy policy governs all purchase transactions.</p>
+  </section>
+
+  <section>
+    <h2>Third-Party Services</h2>
+    <p>FORGED does not integrate with any third-party analytics, advertising, crash reporting, or tracking services. There are no SDKs from Facebook, Google, or any other advertising network in this app.</p>
+    <p>When you tap an exercise name to view a how-to video, the app opens YouTube in Safari. At that point, YouTube's and Google's privacy policies apply to your browsing session. FORGED does not pass any personal information to YouTube.</p>
+  </section>
+
+  <section>
+    <h2>Children's Privacy</h2>
+    <p>FORGED is not directed at children under the age of 13. We do not knowingly collect personal information from children. If you are a parent or guardian and believe your child has provided personal information through the app, please contact us and we will address the situation promptly.</p>
+  </section>
+
+  <section>
+    <h2>Data Deletion</h2>
+    <p>Because all your data is stored locally on your device, you can delete it at any time by deleting the FORGED app. This permanently removes all workout history, progress, and preferences associated with the app. If you have iCloud backup enabled, you may also need to remove the backup data from Settings → Your Name → iCloud → Manage Storage.</p>
+  </section>
+
+  <section>
+    <h2>Changes to This Policy</h2>
+    <p>If we make material changes to this privacy policy, we will update the effective date at the top of this page and, where appropriate, notify you through the app. Continued use of FORGED after changes are posted constitutes acceptance of the updated policy.</p>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <p>If you have questions about this privacy policy or how FORGED handles data, you can reach us at:</p>
+    <p><a href="mailto:REPLACE_WITH_YOUR_EMAIL">REPLACE_WITH_YOUR_EMAIL</a></p>
+  </section>
+
+  <footer>
+    <div class="footer-brand">FORGED</div>
+    <div class="footer-date">LAST UPDATED — REPLACE WITH LAUNCH DATE</div>
+  </footer>
+
+</div>
+</body>
+</html>
